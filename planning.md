@@ -63,3 +63,39 @@ By linking plants to BAs (via spatial joins) and computing BA‐ and fuel‐spec
 2. Geospatial Analysis: Create static and interactive maps showing spatial “hotspots” of high emission intensity—both at the BA level and at individual power plants—identify clustering patterns (e.g., BAs that remain carbon‐heavy vs. those that are cleaner)
 
 3. If at all possible (time and data permitting), I would like to see if there is any way to pull a data center data set and use that to present a average estimate of load consumption vs emissions intensity for data centers (existing and upcoming)
+
+
+---
+
+### Timeline
+
+Given a 3–4 week project duration, the following timeline is proposed:
+
+**Week 1: Data Acquisition & Integration**
+- Collect and clean data from EIA Electric Grid Monitor (EIA-930 API) and EPA eGRID datasets.
+- Perform initial exploratory data analysis.
+- Develop scripts for joining and aligning plant-level and BA-level data.
+
+**Week 2: Analysis Architecture & Preliminary Insights**
+- Build core analysis scripts and data pipelines.
+- Conduct initial time-series decomposition and geospatial mapping.
+- Set up the Streamlit dashboard framework for results presentation.
+
+**Week 3: Modeling & Experimentation**
+- Develop and validate forecasting models (SARIMA, XGBoost, LSTM).
+- Compare model performance and refine features.
+- Expand geospatial analysis and identify emission hotspots.
+
+**Week 4: Synthesis & Presentation**
+- Finalize dashboard and visualizations.
+- Summarize findings and draft conclusions.
+- Prepare documentation and project report.
+
+---
+
+### Citations
+
+- U.S. Energy Information Administration (EIA). Electric Grid Monitor (EIA-930 API). [https://www.eia.gov/realtime_grid/](https://www.eia.gov/realtime_grid/)
+- U.S. Environmental Protection Agency (EPA). Emissions & Generation Resource Integrated Database (eGRID). [https://www.epa.gov/egrid](https://www.epa.gov/egrid)
+- WattTime. "Average vs. Marginal Emissions." [https://watttime.org/data-science/data-signals/average-vs-marginal/](https://watttime.org/data-science/data-signals/average-vs-marginal/)
+- Ascend Analytics. "Unlocking the Carbon Abatement Potential of Storage with Locational Marginal Emissions." [https://www.ascendanalytics.com/blog/unlocking-the-carbon-abatement-potential-of-storage-with-locational-marginal-emissions](https://www.ascendanalytics.com/blog/unlocking-the-carbon-abatement-potential-of-storage-with-locational-marginal-emissions)
